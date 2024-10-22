@@ -9,8 +9,20 @@ body {
   width: 30rem;
 }
 
+.pzin{
+  font-size: 40px;
+  
+}
+  
+.perfil{
+  width: 20%;
+  border-radius: 150px;
+  margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
 .logo{
-  width: 7%;
+  width: 7%; /* Tamanho da logo */
+  margin-right: 15px; /* Espaço à direita da logo */
 }
 
 .titulo {
@@ -41,14 +53,11 @@ p {
     padding-bottom: 60px; /* Espaçamento para o footer */
 }
 .footer {
-    background-color: #24242c    ; /* Cor de fundo do footer */
-    color: #ffffff; /* Cor do texto */
-    padding: 20px 0; /* Espaçamento vertical */
-    position: none; /* Mantém o footer fixo na parte inferior */
-    bottom: 0;
-    left: 0;
-    width: 100%; /* Ocupa toda a largura da página */
-    text-align: center; /* Alinha o texto ao centro */
+  background-color: #24242c; /* Cor de fundo do footer */
+  color: #ffffff; /* Cor do texto */
+  padding: 20px 0; /* Espaçamento vertical */
+  display: flex; /* Usar flexbox para layout */
+  align-items: center; /* Centraliza verticalmente */
 }
 .footer a {
     color: #ffffff; /* Cor dos links */
@@ -61,6 +70,31 @@ p {
 .footer p {
     margin: 0; /* Remove margens dos parágrafos */
     
+}
+
+.footer-text {
+  flex: 1; /* Faz o texto ocupar o espaço restante */
+  text-align: center; /* Centraliza o texto */
+}
+
+.footer-links {
+  margin-top: 5px; /* Espaçamento acima dos links */
+}
+
+.footer-links a {
+  color: #ffffff; /* Cor dos links */
+  text-decoration: none; /* Remove sublinhado dos links */
+  margin: 0 10px; /* Espaçamento entre links */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Sublinha os links ao passar o mouse */
+}
+
+.footer-content {
+  display: flex; /* Flexbox para o conteúdo do rodapé */
+  align-items: center; /* Centraliza verticalmente */
+  width: 100%; /* Garante que o conteúdo ocupe a largura total */
 }
 
 .popup {

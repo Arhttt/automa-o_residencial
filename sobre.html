@@ -11,90 +11,93 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container-icon {
+            background-color: #26262c;
+            padding: 20px;
+            padding-left: 30px;
+            border-radius: 20px;
+            display: flex; /* Para alinhar os itens lado a lado */
+            align-items: center; /* Centraliza verticalmente */
+            margin-bottom: 10px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .container{
+            background-color: #26262c;
+            padding: 20px;
+            padding-left: 30px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+        }
+
+    </style>
 </head>
 
 <body>
     <nav class="navbar bg-dark fixed-top justify-content-center ">
-        <ul class="nav justify-content-center">
-
+        <ul class="nav justify-content-center text-justify">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Pagina Principal</a>
+                <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="conteudo.html">Conteúdo</a>
+                <a class="nav-link active" aria-current="page" href="conteudo.html">Conteúdo</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="feedback.php">Feedback</a>
             </li>
         </ul>
-
     </nav>
     <br>
     <br>
     <br>
 
-    <h1 class="titulo text-center">ASSUNTOS IMPORTANTES</h1>
-    <br>
-
-    <div class="container">
-        <div class="container d-flex justify-content-center">
-            <div class="card bg-dark card-inline" style="width: 18rem;">
-                <img src="img/1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="titulo card-title"><strong>CASAS INTELIGENTES</strong></h5>
-                    <p class="card-text">Aqui terá um pouco sobre as residências automatizadas.</p>
-                    <a href="#" class="btn btn-primary">Clique aqui!</a>
-                </div>
-            </div>
-
-            <div class="card bg-dark card-inline" style="width: 18rem;">
-                <img src="img/talvez.jpg" class="card-img-top " alt="...">
-                <div class="card-body">
-                    <h5 class="titulo card-title"><strong>COMO É FEITA A AUTOMAÇÃO</strong></h5>
-                    <p class="card-text">Aqui será falado com funciona e como é feita.</p>
-                    <a href="#" class="btn btn-primary">Clique aqui!</a>
-                </div>
-            </div>
-
-            <div class="card bg-dark card-inline" style="width: 18rem;">
-                <img src="img/sera.png" class="card-img-top " alt="...">
-                <div class="card-body">
-                    <h5 class="titulo card-title"><strong>BENEFÍCIOS</strong></h5>
-                    <p class="card-text">Alguns benefícios que a casa inteligente fornece</p>
-                    <a href="#" class="btn btn-primary">Clique aqui!</a>
-                </div>
-            </div>
-        </div>    
+    <div class="container-icon">
+        <img class="perfil" src="img/ftperfil.jpeg" alt="foto de perfil">
+        <p class="pzin">Ola! Eu sou Arthur Schimanski Vieira</p>
     </div>
-    <br>
-    <br>
+
     
+
     <div class="container">
-
-        <h3 class="titulo text-center">Confira algumas ideias para sua casa inteligente</h3>
-        <br>
-        <div class="container d-flex justify-content-center align-items-center">
-            <video width="640" height="360" controls>
-                <source src="img/20 AUTOMAÇÕES para se INSPIRAR _ CASA INTELIGENTE com  ALEXA, SONOFF e muitos sensores!.mp4    " type="video/mp4">
-                Seu navegador não suporta a tag de vídeo.
-            </video>
-        </div>          
+        <h3 class="titulo">Um pouco sobre mim </h3>
+        <p>Esse site foi desenvolvido por mim, durante meu tempo no Colégio Barbosa Ferraz. Utilizei HTML, CSS e PHP para criar uma plataforma que reflete meu aprendizado e habilidades na área de desenvolvimento web. Se você tiver alguma dúvida, sugestão ou quiser entrar em contato comigo, não hesite em me procurar! Estou sempre aberto a feedbacks e novas oportunidades de colaboração.</p>
+        
+        <h3 class="titulo">Me procure por aqui:</h3>
+        <ul>
+            <li>
+                <a href="https://github.com/Arhttt" target="_blank">Git Hub</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/arhtt_" target="_blank">Instagram</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/arthur-vieira-164a112a0/" target="_blank">Linkedin</a>
+            </li>
+        </ul>
     </div>
-    <br>
-    <br>
 
+    
+    
+
+    
 
     <footer class="footer">
-        <p>&copy; 2024 Feito por Arthur Schimanski Vieira. Todos os direitos reservados.</p>
-        <p>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
-            <a href="#">Privacidade</a>
-            <a href="#">Termos de Serviço</a>
-        </p>
+        <div class="footer-content">
+            <img class="logo" src="img/logo.png" alt="Logo do Barbosa">
+            <div class="footer-text">
+                <p>&copy; 2024 Feito por Arthur Schimanski Vieira. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="sobre.html">Sobre</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 

@@ -6,7 +6,7 @@ if (isset($_POST["email"])) {
     $textarea = $_POST["textarea"];
     $mysqlierrno = "falha";
     
-    $mysqli->query("INSERT INTO feedback (email, textarea) values('$email', '$textarea')") or
+    $mysqli->query("INSERT INTO feedback (email, mensagem) values('$email', '$textarea')") or
         die($mysqlierrno);
 } else {
     echo "algo deu errado";
@@ -75,11 +75,15 @@ if (isset($_POST["email"])) {
     <br><br>
 
     <footer class="footer">
-        <p>&copy; 2024 Feito por Arthur Schimanski Vieira. Todos os direitos reservados.</p>
-        <p>
-            <a href="sobre.html">Sobre</a>
-            <a href="Contatos.php">Contato</a>
-        </p>
+        <div class="footer-content">
+            <img class="logo" src="img/logo.png" alt="Logo do Barbosa">
+            <div class="footer-text">
+                <p>&copy; 2024 Feito por Arthur Schimanski Vieira. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                <a href="sobre.html">Sobre</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
